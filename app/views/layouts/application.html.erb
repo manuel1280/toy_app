@@ -7,9 +7,17 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Log in</a></li>
+      </ul>
+    </nav>
   </head>
 
   <body>
+  <div class="container">
     <%= yield %>
-  </body>
+  </div>
 </html>
